@@ -2,7 +2,9 @@ var resultBoxEasy;
 var resultBoxHard;
 var resultColor;
 var resultColorToDisplay;
-var resultColorDisplay = document.querySelector(".colorToFind")
+var score = 0 ;
+var scoreDisplay = document.querySelector(".score");
+var resultColorDisplay = document.querySelector(".colorToFind") ;
 var gameAlert = document.querySelector(".alert") ;
 var eachBoxHard = document.querySelectorAll(".box");
 var eachBoxEasy = document.querySelectorAll(".easy");
@@ -15,6 +17,8 @@ var titleBack = document.querySelector(".title");
 easyMode.addEventListener("click",InitializeEasy);
 hardMode.addEventListener("click",initializeHard);
 restartButt.addEventListener("click",function(){
+	score += 0 ;
+	scoreDisplay.textContent = score ;
 	initializeHard();
 });
 
@@ -60,6 +64,8 @@ function answerChecker(){
 	if ( boxColor == resultColor) {
 		gameAlert.textContent = " You got it right rookie" ;
 		gameAlert.style.color = "rgb(5, 255, 100)" ;
+		score += 15
+		scoreDisplay.textContent = score ;
 		for (var i = 0; i < eachBoxHard.length; i++) {
 			if (eachBoxHard[i].style.backgroundColor = "black") {
 			eachBoxHard[i].style.backgroundColor = resultColor ;
