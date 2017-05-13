@@ -1,7 +1,7 @@
 var currentDay = prompt("Please enter the current day of the Week").toLowerCase() ;
 var inputTrys = 7 ;
 
-while (currentDay !== "exit" && inputTrys >0 ){
+while (currentDay !== "exit" && inputTrys > 0 ){
 	var daysofweek = ['lunes','martes','miercoles','jueves','viernes','sabado','domingo'] ;
 	var dayChecker = daysofweek.indexOf(currentDay);
 	if ( !isNaN(currentDay)){
@@ -26,7 +26,7 @@ function gothroughdays(){
 		alert("Es fin de Semana") ;
 		inputTrys = 7;
 	}		
-}
+};
 
 
 
@@ -40,7 +40,7 @@ function gothroughdays(){
 
 
 
-
+d
 
 
 
