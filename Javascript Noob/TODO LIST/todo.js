@@ -13,11 +13,29 @@ $("section").on("click", ".deleteButt" ,function(event){
 	event.stopPropagation();
 });
 
-//on pencil click, show input to edit h1
-$("section").on("dblclick", "h1" ,function(event){
-	var myClass = $(this).parent().attr("class");
-	$("." + myClass + " " + "input2").val("");
+//al hacer click en pencil, que oculte el titulo y muestre el input (toggle), hidee el +, el pencil de edit 
+// y el header anterior.
+$("section").on("click", ".fa-pencil" ,function(){
+	var myClass = $(this).parent().parent().attr("class");
+	$("." + myClass + " " + ".fa-pencil").toggle();
+	$("." + myClass + " " + ".fa-plus").toggle();
+	$("." + myClass + " " + ".editTodoInput").toggle();
+	$("." + myClass + " " + ".editTodo").toggle();
+});
 
+//al completar el texto del input, reemplazar el texto del span por el del input y setear el input a blank
+//vuelva a mostrar todo
+$("section").on("keypress", ".editTodoInput" ,function(e){
+	if (e.which===13){
+	var myClass = $(this).parent().parent().attr("class");
+	var newTitle = $(this).val();
+	$(this).val("");
+	$("." + myClass + " " + ".editTodo").text(newTitle) ;
+	$("." + myClass + " " + ".fa-pencil").toggle();
+	$("." + myClass + " " + ".fa-plus").toggle();
+	$("." + myClass + " " + ".editTodoInput").toggle();
+	$("." + myClass + " " + ".editTodo").toggle();
+	}
 });
 
 // add a listener to text input when they hit enter to add a new todo of that nature
@@ -38,7 +56,7 @@ $("section").on("click",".fa-plus",function(){
 });
 
 $(".newList").on("click",function(){
-	$("section").append("<div><h1 class='headerList1'>TO-DO LIST<i class='fa fa-plus'></i></h1><input name='input1' class='newInput' placeholder='Add a new Todo'><ul class='list1'><li class='item'><span class='deleteButt'><i class='fa fa-trash'></i></span> Visit Hagrid</li><li class='item'><span class='deleteButt'><i class=fa fa-trash'></i></span> Kiss Hermione</li><li class='item'><span class='deleteButt'><i class='fa fa-trash'></i></span> Hug Buckbeack</li><li class='item'><span class='deleteButt'><i class='fa fa-trash'></i></span> Pester Malfoy</li></ul></div>");
+	$("section").append("<div><h1 class='headerList1'><span class='editTodo'>TO-DO LIST</span><input type='''' name=''' class='editTodoInput'><i class='fa fa-pencil'></i><i class='fa fa-plus'></i></h1><input type='' name='input1' class='newInput' placeholder='Add a new Todo'><ul class='list1'></ul></div>");
 	var listClass = "lista" + listNumber ;
 	$("div:last-of-type").toggleClass(listClass);
 	listNumber ++ ;
