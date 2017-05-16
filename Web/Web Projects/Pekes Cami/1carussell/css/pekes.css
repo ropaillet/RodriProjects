@@ -1,0 +1,123 @@
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        padding: 0px;
+        background-color:white;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+        padding: 0px;
+        font-size: 20PX;
+        font-weight: bold;
+        margin-left: 1PX;
+        font-family: 'Irish Grover', cursive;
+        background-color:white;
+    }
+}
+
+.navContainer{
+    background-color:white;
+}
+
+.navbar{
+    margin-bottom: 0px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+   color: red;
+}
+
+.navbar-default .navbar-nav>li>a {
+   color: rgb(3,202,253);
+}
+
+.navImgPeke{
+	max-width:100px;
+	height:45px;
+	margin-top:-13px;
+}
+
+.headerBox{
+    
+background: #06beb6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    padding:15px;
+}
+
+.headerImg{
+	height: 128px;
+	width: auto;
+	margin-left: -16px;
+}
+
+.pekeFooter{
+    display: inline-block;
+    list-style: none;
+    font-family: 'Irish Grover', cursive;
+    font-size: 18px;
+    color: white;
+    padding: 8px 8px 8px 8px;
+    line-height: 25px;
+}
+
+.fa{
+    color: white;
+    font-size: 29px;
+}
+
+.fa:hover{
+    color: red;
+    text-decoration: none;
+}
+
+
+.contactos{
+    color: white;
+}
+
+.contactos:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.fa-whatsapp{
+    font-size: 20px;
+}
+
+.socialMedia{
+    line-height: 40px;
+}
+
+.carruContainer{
+    padding:0px;
+    margin:0px;
+    background-color: RGB(252, 252, 252);
+}
+
+
+
+.carru{
+    padding: 0px;
+}
+
+.carruText{
+    font-weight:700;
+    font-size: 5em;
+    bottom: 320px;
+    font-family: 'Irish Grover', cursive;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+a.right.carousel-control , a.left.carousel-control {
+    background-image: none;
+}
+
+.glyphicon-chevron-right , .glyphicon-chevron-left{
+   color:rgb(3,202,253);
+}
