@@ -1,7 +1,11 @@
 var scKeeper1 =document.querySelector(".counterP1");
 var scKeeper2 =document.querySelector(".counterP2");
+var incrementP1 = document.querySelector(".addP1");
+var incrementP2 = document.querySelector(".addP2");
+
 var scoreP1 = Number(scKeeper1.textContent);
 var scoreP2 = Number(scKeeper2.textContent);
+
 var playingTo = document.querySelector(".playingTo");
 var playingToValue = Number(playingTo.textContent);
 var setPlayingTo = document.querySelector(".playingToInput") ;
