@@ -1,4 +1,3 @@
-//Dos superheroes con Vida (objeto), modificador de golpe(fuerza) y nombre
 var scKeeper1 =document.querySelector(".counterP1");
 var scKeeper2 =document.querySelector(".counterP2");
 var incrementP1 = document.querySelector(".addP1");
@@ -10,6 +9,7 @@ var vader ={
 	vida:5000,
 	fuerza: 3,
 }
+
 var luke ={
 	nombre:"Luke Skywalker",
 	vida:2500,
@@ -22,50 +22,39 @@ var golpear = function (fuerza){
 	return golpe;
 }
 
- //If yes: Quien golpea primero ? ==>call random generator que devuele quien es el mayor
- //	primero = posicion 1 del array superheroes;
- //	segundo = posicion 2 del array;
-
 // mientras vida de 1 y vida 2 sea distinto de 0, ejecutar golpe a golpe
-//var initLuchas = prompt("Empezar Lucha Y/N");
 while(gameOn){
 	var golpeluke = golpear (luke.fuerza);
 	var golpeVader = golpear (vader.fuerza);
 
 	//golpes de Luke
 	if(vader.vida - golpeluke <= 0){  
-		vader.vida = vader.vida - golpeluke;
-		scoreP1 = 0;
-		scKeeper1.textContent = scoreP1	
+		vader.vida -= golpeluke;
+		scKeeper1.textContent = 0;
 		scKeeper2.style.color = "green" ;
 		document.body.style.backgroundColor = "green";
 		console.log(" Luke golpea con su lightsaber por " + golpeluke + ", Vader cae inerte al vacio.");
 		break;
 	}
 	if(vader.vida - golpeluke > 0){  
-		vader.vida = vader.vida - golpeluke;
-		scoreP1 = vader.vida;
-		scKeeper1.textContent = scoreP1	
+		vader.vida -= golpeluke;
+		scKeeper1.textContent = vader.vida;	
 		console.log(" Luke golpea con su lightsaber por " + golpeluke + ", Vader queda en " + vader.vida );
 	}
-
 	//golpes de Vader
 	if(luke.vida - golpeVader <= 0){  
-		luke.vida = luke.vida - golpeVader;
-		scoreP2 = 0;
-		scKeeper2.textContent = scoreP2;
+		luke.vida -= golpeVader;
+		scKeeper2.textContent = 0;
 		scKeeper1.style.color = "red" ;
 		document.body.style.backgroundColor = "red";
 		console.log(" Vader golpea con su lightsaber por " + golpeVader + ", Luke cae inerte al vacio.");
 		break;
 	}
 	if(luke.vida - golpeVader > 0){
-		luke.vida = luke.vida - golpeVader
-		scoreP2 = luke.vida;
-		scKeeper2.textContent = scoreP2;
+		luke.vida -= golpeVader
+		scKeeper2.textContent = luke.vida;
 		console.log(" Vader golpea con su lightsaber por " + golpeVader + ", Luke queda en " + luke.vida );
 	}
-
 }
 
 
