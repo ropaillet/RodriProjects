@@ -1,6 +1,74 @@
-body, html{
-    width:100%;
+
+
+.ard2{
+	color:red;
+	}
+|
+ .navbar .navbar-collapse {
+        text-align: center;
+        padding: 0px;
+        font-size: 20PX;
+        font-weight: bold;
+        margin-left: 1PX;
+		margin-top:10px;
+        font-family: 'Irish Grover', cursive;
+        background:white; 
+    }
+
+	
+.btn-separator{
+	height: 50px;
+	
 }
+	.btn-separator:after {
+    content: ' ';
+    float: left;
+    background: #ADADAD;
+    height: 50px;
+    width: 1px;
+	margin-top:14px;
+	background-color:#FFFFFF;
+	background-image:-moz-linear-gradient(top, #FFFFFF 15%, #00E1FF 50%,#FFFFFF 93%);
+	background-image:linear-gradient(top, #FFFFFF 15%, #00E1FF 50%,#FFFFFF 93%);
+	background-image:-webkit-linear-gradient(top, #FFFFFF 15%, #00E1FF 50%,#FFFFFF 93%);
+	background-image:-o-linear-gradient(top, #FFFFFF 15%, #00E1FF 50%,#FFFFFF 93%);
+	background-image:-ms-linear-gradient(top, #FFFFFF 15%, #00E1FF 50%,#FFFFFF 93%);
+	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(15%,#FFFFFF), color-stop(50%,#00E1FF),color-stop(93%,#FFFFFF));
+}
+	
+.navContainer{
+    background:white;
+	}
+
+.navbar{
+    margin-bottom: 0px;
+	border:0px;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+   color: #FF7D19;
+   border:0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+   color: #00E1FF; 
+   line-height:48px;
+}
+
+.navImgPeke{
+	max-width:100px;
+	height:80px;
+	margin-top:-10px;
+	margin-left: 200px;
+}
+
+/*
+.scrolled {
+  background-color: red;
+  color:black;
+  transition: background-color 1000ms;
+}*/
 
 h1{
     font-family: 'Irish Grover', cursive;
@@ -8,36 +76,13 @@ h1{
     font-size: 3em;
     margin: 0px;
     padding:0px 20px 20px 20px;
-}
-
-@media (min-width: 768px) {
-    .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
-        padding: 0px;
-        background-color:white;
-    }
-    .navbar .navbar-collapse {
-        text-align: center;
-        padding: 0px;
-        font-size: 20PX;
-        font-weight: bold;
-        margin-left: 1PX;
-        font-family: 'Irish Grover', cursive;
-        background-color:white;
-    }
-}
-
-.navContainer{
-    background-color:white;
-}
-
+}	
+	
 .section2{
     background-color:#1a9eca/* #FF6F00*/;
     font-family: 'Irish Grover', cursive;
     color:white;
-    padding: 25px;
+    padding: 35px;
 }
 
 .section3{
@@ -48,27 +93,8 @@ h1{
 }
 
 .section4{
-    padding: 25px;
-    color:#1a9eca;
+    padding: 0px 0px 40px 0px;
     background-color:white;
-}
-
-.navbar{
-    margin-bottom: 0px;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-   color: #FF7D19;
-}
-
-.navbar-default .navbar-nav>li>a {
-   color: #00E1FF;
-}
-
-.navImgPeke{
-	max-width:100px;
-	height:45px;
-	margin-top:-13px;
 }
 
 .headerBox{
@@ -95,10 +121,7 @@ h1{
     margin-bottom: -10px;
 }
 
-.fa{
-    color: white;
-    font-size: 29px;
-}
+
 
 .imgA{
     object-fit: cover;
@@ -150,6 +173,11 @@ h1{
 .contactos:hover{
     color: #FF7D19;
     text-decoration: none;
+}
+
+.fa{
+    color: white;
+    font-size: 29px;
 }
 
 .fa-whatsapp, .fa-envelope-o{
@@ -218,17 +246,6 @@ h1{
     height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 a.right.carousel-control , a.left.carousel-control {
     background-image: none;
 }
@@ -248,30 +265,11 @@ a.right.carousel-control , a.left.carousel-control {
 }
 
 figure {
-    height: 250px;
-    width: 250px;
+    height: 350px;
+    width: 350px;
     display: block;
     overflow: hidden;
     z-index: 100;
-}
-
-figcaption {
-    height: 250px;
-    width: 100%;
-    background: url(http://gridelicious.net/themes/treble/demo/assets/images/css/thumb_over.png) no-repeat center 150px black;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: -500px;
-    opacity: 0; 
-    padding: 5px;
-}
-
-a:hover figcaption {
-    opacity: 0.8;
-    left: 0;
-    color: #fff;
-    transition: all 0.7s;
 }
 
 hr {
@@ -287,6 +285,8 @@ hr {
 
 .imgA{
   position: absolute;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
 -webkit-transition: 0.4s ease;
@@ -297,4 +297,9 @@ hr {
   -webkit-transform: scale(1.08);
   transform: scale(1.15);
 }
+
+
+
+
+
 
