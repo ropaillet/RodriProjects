@@ -44,6 +44,9 @@
 	height: 50px;	
 }
 
+.telNavbarWeight{
+    font-weight: normal;
+}
 .btn-separator:after {
     content: ' ';
     float: left;
