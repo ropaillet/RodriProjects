@@ -1,26 +1,50 @@
 
-
-.ard2{
-	color:red;
-	}
-|
- .navbar .navbar-collapse {
-        text-align: center;
-        padding: 0px;
-        font-size: 20PX;
-        font-weight: bold;
-        margin-left: 1PX;
-		margin-top:10px;
-        font-family: 'Irish Grover', cursive;
-        background:white; 
-    }
-
-	
-.btn-separator{
-	height: 50px;
-	
+.navContainer{
+    background:white;
+    padding: 0px 90px 0px 90px ;
 }
-	.btn-separator:after {
+
+.navbar-right>li>a{
+    display: inline;
+    padding-left:0px;
+}
+
+.navbar-right .fa{
+    padding: 15px 8px 15px 8px;
+    color: #00E1FF;
+    font-size: 21PX;
+    line-height:48px;
+    font-weight: bolder;
+}
+
+.navbar-right:hover .fa, {
+    color: #FF7D19;
+}  
+
+.navbar-right{
+    height: 78px;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    font-size: 20PX;
+    font-weight: bold;
+    margin-left: 1PX;
+	margin-top:5px;
+    margin-bottom: 5px;
+    font-family: 'Irish Grover', cursive;
+}
+
+.navbar-right .btn-separator:after{
+    height: 30px;
+    margin-top:25px;
+}
+
+.btn-separator{
+	height: 50px;	
+}
+
+.btn-separator:after {
     content: ' ';
     float: left;
     background: #ADADAD;
@@ -36,19 +60,9 @@
 	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(15%,#FFFFFF), color-stop(50%,#00E1FF),color-stop(93%,#FFFFFF));
 }
 	
-.navContainer{
-    background:white;
-	}
-
 .navbar{
     margin-bottom: 0px;
 	border:0px;
-
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-   color: #FF7D19;
-   border:0px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -56,19 +70,15 @@
    line-height:48px;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+   color: #FF7D19;
+}
+
 .navImgPeke{
 	max-width:100px;
 	height:80px;
-	margin-top:-10px;
-	margin-left: 200px;
+	margin-top:-12px;
 }
-
-/*
-.scrolled {
-  background-color: red;
-  color:black;
-  transition: background-color 1000ms;
-}*/
 
 h1{
     font-family: 'Irish Grover', cursive;
@@ -121,10 +131,8 @@ h1{
     margin-bottom: -10px;
 }
 
-
-
 .imgA{
-    object-fit: cover;
+  object-fit: cover;
   width: 350px;
   height: 350px;
 }
@@ -175,6 +183,10 @@ h1{
     text-decoration: none;
 }
 
+.footerTitle{
+    font-weight: bolder;
+}
+
 .fa{
     color: white;
     font-size: 29px;
@@ -187,16 +199,6 @@ h1{
 .socialMedia{
     line-height: 40px;
 }
-
-.footerTitle{
-    font-weight: bolder;
-}
-
-/*.carruContainer{
-    padding:0px;
-    padding:30px 0px 30px 0px;
-    background-color: RGB(252, 252, 252);
-}*/
 
 .carruCont{
     width:100%;

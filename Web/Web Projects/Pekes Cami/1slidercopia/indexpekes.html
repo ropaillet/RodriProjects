@@ -4,37 +4,21 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
-   <!-- <link href="Annabelle.ttf" rel="stylesheet">-->
 	<link href="https://fonts.googleapis.com/css?family=Irish+Grover|Short+Stack" rel="stylesheet">
 	<script src="https://use.fontawesome.com/b7290e5d75.js"></script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!-- Importante llamar antes a jQuery para que funcione bootstrap.min.js   --> 
-    <script src="js/bootstrap.min.js"></script> <!-- Llamamos al JavaScript de Bootstrap --> 
-	
 	<link rel="stylesheet" type="text/css" href="css/pekes.css">
-	
-	
-        <!-- Scrolling Nav JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+        <!-- Scrolling Nav JavaScript y Posteo AJAX -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-	
-	<script type="text/javascript">
-	
-	
-	
-
-	</script>
-
 	<title>Pekes Eventos</title> 
 </head> 
-<body> 
-	<!--<div class="container-fluid headerBox" align ="center" >
-		<img src="imagenesPekes/pekes.png" class="headerImg">
-    </div> --> 
-  
-	<nav class="navbar navbar-default navContainer navbar-fixed-top">
+<body>
+	<!-- Comienzo navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top navContainer">
 	    <div class="navbar-header"> 
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><!-- Mobile -->
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -54,14 +38,17 @@
 			<span class="btn-separator"></span>
 			<li class="navButt"><a  class="page-scroll" href="#contacto">Contacto</a></li> 
 	      </ul>
-		      <ul class="nav navbar-nav navbar-right ard2">
-				<li><a href="#"><span><i class="fa fa-whatsapp ard2"></i></span> 011-2297-1499</a></li>
+		      <ul class="nav navbar-nav navbar-right">
+				<li><span><a href="https://www.facebook.com/pekes.salondeeventos" target="_blank"<i class="fa fa-facebook-square"></i></a></span></li>
+				<span class="btn-separator"></span>
+				<li><span><a href="https://www.instagram.com/eventospekes" target="_blank"<i class="fa fa-instagram"></i></a></span></li>
+				<span class="btn-separator"></span>
+				<li><a href="#"><span><i class="fa fa-whatsapp"></i></span>011-2297-1499</a></li>
 			</ul>
 	    </div>
-	</nav>
+	</nav> <!-- Fin navbar -->
 	
-
-<section id="inicio">
+<section id="inicio"><!-- Comienzo Carru -->
 <div class="container-fluid carruCont">
 <div class="row carruCont">
 		<div class="col-sm-12 carruRow">
@@ -111,12 +98,9 @@
 		</div>
 	</div>
 </div>
-</section> <!-- Fin section inicio -->
+</section> <!-- Fin section carru -->
 
-
-<section id="servicios">
-
-
+<section id="servicios"><!-- Comienzo Servicios-->
 <div class="container-fluid section2" align="center">
 	<div class="row">
 		<h1> Servicios </h1>
@@ -170,64 +154,42 @@
 		</div>
 	</div>
 </div>
-
 </section>  <!-- Fin seccion servicios -->
 
-
-
-<section id="galeria">
-
+<section id="galeria"><!-- Comienzo Galeria-->
 <div class="container-fluid" id="gallery">
 	<h1 align="center" class="section3">Nuestro Salon</h1>
     <figure class="col-sm-3 col-xs-6 mosaic">
-      <img class="imgA" src="imagenesPekes/fotopekes2.jpeg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes2.jpeg">
     </figure>
     <figure class="col-sm-3 col-xs-6 mosaic">
-      <img class="imgA" src="imagenesPekes/fotopekes1.jpeg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes1.jpeg">
     </figure>
   <figure class="col-sm-3 col-xs-6 mosaic">
-      <img class="imgA" src="imagenesPekes/fotopekes3.jpg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes3.jpg">
     </figure>
   <figure class="col-sm-3 col-xs-6 mosaic">
-      <img class="imgA" src="imagenesPekes/fotopekes2.jpeg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes2.jpeg">
     </figure>
   <figure class="col-sm-3 col-xs-6 mosaic">
-      <img class="imgA" src="imagenesPekes/fotopekes1.jpeg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes1.jpeg">
     </figure>
   <figure class="col-sm-3 col-xs-6 mosaic">
-      <img class="imgA" src="imagenesPekes/fotopekes3.jpg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes3.jpg">
     </figure>
   <figure class="col-sm-3 col-xs-6 mosaic">
-      <img class="imgA" src="imagenesPekes/fotopekes1.jpeg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes1.jpeg">
     </figure>
   <figure class="col-sm-3 col-xs-6 mosaic zoom-effect-container">
-      <img class="imgA" src="imagenesPekes/fotopekes2.jpeg" alt="" />
+      <img class="imgA" src="imagenesPekes/fotopekes2.jpeg">
   </figure>
-  <!-- <figure class="col-md-3 col-sm-3 col-xs-12 ">
-      <a href="#">
-      <img class="img" src="http://lorempixel.com/800/400/nature/4/" alt="" />
-        <figcaption>
-            <h2>Legend</h2>
-            <p>Lorem ipsum dolor sit amet</p>
-        </figcaption>
-        </a>
-    </figure>-->
 </div>
-
 </section> <!-- Fin galeria -->
 
-
 <section id="promociones">
-
 </section>
 
-
-
-
-
-
-<section id="contacto">
-
+<section id="contacto"><!-- Comienzo Contacto-->
 <div class="container-fluid section4" align="center">
 		<h1 class="section2"> Contacto</h1>
 		<div class="container tablaContacto">	
@@ -239,19 +201,15 @@
 						  <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" id="nombre">
 						</div>
 						<br></br>
-						
 						<div class="input-group">
 						  <input type="text" class="form-control" placeholder="Telefono" aria-describedby="basic-addon1" id="telefono">
 						</div>
 						<br></br>
-
 						<div class="input-group">
 						  <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1" id="email">
 						</div>
 						<br></br>
-
 						<div class="input-group">
-						  <!-- <textarea type="text" class="form-control" placeholder="Mensaje" aria-describedby="basic-addon1" id="mensaje" style="height:10em;width:500px;"> -->
 						  <textarea type="text" class="form-control" placeholder="Mensaje" aria-describedby="basic-addon1" id="mensaje" style="height:10em;width:500px;"></textarea>
 						</div>
 						<br></br>
@@ -268,51 +226,21 @@
 			<br>
 		</table>
 	</div>
-	
-</section>	
-
-	
-	
-	<script>
-
-	
-		$('#enviar').click(function(){
-			var data = {
-				nombre: $("#nombre").val(),
-				email: $("#email").val(),
-				mensaje: $("#mensaje").val()
-			};
-			$.ajax({
-				type: "POST",
-				url: "email.php",
-				data: data,
-				success: function(){
-					$('.success').fadeIn(1000);
-				}
-			});
-		});
-    </script>
-
-	
-	
-	
-
-
+</section>	<!-- Fin contacto -->
 </div>
-	<div class="container-fluid headerBox" align="center">
+
+<div class="container-fluid headerBox" align="center"><!-- Comienzo footer-->
 		<ul class="pekeFooter">
 			<li class="footerTitle"> PEKES EVENTOS </li>
-			<li class="socialMedia"><a href="https://www.facebook.com/pekes.salondeeventos" target="_blank"<i class="fa fa-facebook-square" aria-hidden="true"></i></a>				
-				<a href="https://www.instagram.com/eventospekes" target="_blank"<i class="fa fa-instagram" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/pekes-sal%C3%B3n-de-eventos-426a43b3/?ppe=1"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+			<li class="socialMedia"><a href="https://www.facebook.com/pekes.salondeeventos" target="_blank"<i class="fa fa-facebook-square"></i></a>				
+				<a href="https://www.instagram.com/eventospekes" target="_blank"<i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/pekes-sal%C3%B3n-de-eventos-426a43b3/?ppe=1"><i class="fa fa-linkedin-square"></i></a>
 			</li>
-			<li class="contactos"><i class="fa fa-whatsapp" aria-hidden="true"></i> 011-2297-1499</li>
-			<li class="contactos"><i class="fa fa-envelope-o" aria-hidden="true"></i> consultas@pekes-eventos.com.ar </li> 
+			<li class="contactos"><i class="fa fa-whatsapp"></i> 011-2297-1499 (14-21hs)</li>
+			<li class="contactos"><i class="fa fa-envelope-o"></i>consultas@pekes-eventos.com.ar </li>
 			<li class="contactos"><a href="https://goo.gl/maps/3xJJ9zV1Pzn" class="contactos"> Av. Triunvirato 3923, Villa Urquiza - CABA</a></li>
-			</ul>
-	</div>
+		</ul>
+</div> <!-- Fin footer -->
 
-     
-  </body> 
-
+ </body> 
 </html> 
