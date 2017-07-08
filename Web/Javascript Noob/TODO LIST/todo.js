@@ -1,6 +1,6 @@
 var listNumber = 1 ;
 
-//checked todos when clicked
+//all clickear en los forms, los checkeo (aplico checked class)
 $("section").on("click","li",function(){
 	$(this).toggleClass("checked");
 });
@@ -38,7 +38,7 @@ $("section").on("keypress", ".editTodoInput" ,function(e){
 	}
 });
 
-// add a listener to text input when they hit enter to add a new todo of that nature
+// add new todo based on text input when they hit enter
 $("section").on("keypress",".newInput",(function(e){
 	if (e.which===13){
 		var myClass = $(this).parent().attr("class");
@@ -50,11 +50,13 @@ $("section").on("keypress",".newInput",(function(e){
 	}
 }));
 
+//hides add new todo text input or shows it when the plus icon is clicked.
 $("section").on("click",".fa-plus",function(){
 	var myClass = $(this).parent().parent().attr("class");
 	$("." + myClass + " " + "input").fadeToggle();
 });
 
+//adds a new list when the user clicks the app title.
 $(".newList").on("click",function(){
 	$("section").append("<div><h1 class='headerList1'><span class='editTodo'>TO-DO LIST</span><input type='''' name=''' class='editTodoInput'><i class='fa fa-pencil'></i><i class='fa fa-plus'></i></h1><input type='' name='input1' class='newInput' placeholder='Add a new Todo'><ul class='list1'></ul></div>");
 	var listClass = "lista" + listNumber ;
