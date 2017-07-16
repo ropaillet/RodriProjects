@@ -13,6 +13,16 @@
 	font-size: 15px;
 }
 
+.gradient{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+24,000000+56,000000+80,000000+92&0.35+0,1+98 */
+height:  500px;
+background: -moz-linear-gradient(top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.51) 24%, rgba(0,0,0,0.72) 56%, rgba(0,0,0,0.88) 80%, rgba(0,0,0,0.96) 92%, rgba(0,0,0,1) 98%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.51) 24%,rgba(0,0,0,0.72) 56%,rgba(0,0,0,0.88) 80%,rgba(0,0,0,0.96) 92%,rgba(0,0,0,1) 98%); /* Chrome10-25,Safari5.1-6 */
+z-index: 500000;
+background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.51) 24%,rgba(0,0,0,0.72) 56%,rgba(0,0,0,0.88) 80%,rgba(0,0,0,0.96) 92%,rgba(0,0,0,1) 98%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
 body{
 	background: #000000;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #53346D, #000000);  /* Chrome 10-25, Safari 5.1-6 */

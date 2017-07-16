@@ -7,6 +7,23 @@ ul {
     list-style: none; 
 }
 
+.clubImg {
+  height: 65px; 
+  width: 65px;
+}
+
+.halfSec{
+  padding: 120px 40px 50px 40px;
+}
+
+.gradientcito{
+  display: inline-block;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 12%, rgba(0,0,0,0.68) 50%, rgba(0,0,0,1) 68%, rgba(0,0,0,1) 92%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 12%,rgba(0,0,0,0.68) 50%,rgba(0,0,0,1) 68%,rgba(0,0,0,1) 92%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 75%,rgba(0,0,0,0.5) 85%,rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+24,000000+56,000000+80,000000+92&0.35+0,1+98 */
+}
+
 .navContainer{
     background-color: black;
     padding: 0px 90px 0px 90px ;
@@ -106,16 +123,13 @@ h1{
 }
 
 .sectionJugador{
-    background-color:black/* #FF6F00*/;
-    font-family: 'Roboto', sans-serif;
-    color:white;
-    padding: 35px 25px 35px 25px;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  padding: 35px 25px 35px 25px;
 }
 
-.section4{
-    padding: 0px 0px 40px 0px;
-    background-color:white;
-}
 
 
 .headerImg{
@@ -183,6 +197,9 @@ h1{
 }
 
 .carruImg{
+    position: relative;
+    z-index: -1;
+    display: block;
     width: 100%;
     padding: 0px;
     height: 100%;
@@ -284,11 +301,6 @@ hr {
 }
 
 
-
-
-
-
-
 ul, menu, dir {
     -webkit-padding-start:0px;
 }
@@ -300,7 +312,7 @@ span.text-content {
   height: 700px;
   position: absolute;
   top: 0;
-  width: 476px;
+  width: auto;
   opacity: 0;
   -webkit-transition: opacity 500ms;
   -moz-transition: opacity 500ms;
@@ -310,6 +322,8 @@ span.text-content {
 
 .img-list li:hover span.text-content {
   opacity: 1;
+
+
 }
 
 span.text-content span {
