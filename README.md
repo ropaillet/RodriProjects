@@ -12,9 +12,9 @@ A snack of my past and current projects !.
 
 **Others**
 - [PatatapClone :](http://htmlpreview.github.io/?https://github.com/ropaillet/RodriProjects/blob/master/Web/Web%20Projects/PatatapClone/patap.html) A Patatap clone made with Howler.Js and Paper.js libraries
-- - [BlueList :](http://htmlpreview.github.io/?https://github.com/ropaillet/RodriProjects/blob/master/Web/Web%20Projects/BlueList/todo.html) A fancy to-do list made with jQuery.
-- - [SpotiClone :](http://htmlpreview.github.io/?https://github.com/ropaillet/RodriProjects/blob/master/Web/Web%20Projects/SpotiClone/spoticlone.html) An app that hits Spotify API and lets you save your favorite albums.
-- - [RGB Guessing Game :](http://htmlpreview.github.io/?https://github.com/ropaillet/RodriProjects/blob/master/Web/Web%20Projects/RGB%20GAME/rgbgame.html) A simple RGB value guessing game to sharpen your color prediction skills.
+- [BlueList :](http://htmlpreview.github.io/?https://github.com/ropaillet/RodriProjects/blob/master/Web/Web%20Projects/BlueList/todo.html) A fancy to-do list made with jQuery.
+- [SpotiClone :](http://htmlpreview.github.io/?https://github.com/ropaillet/RodriProjects/blob/master/Web/Web%20Projects/SpotiClone/spoticlone.html) An app that hits Spotify API and lets you save your favorite albums.
+- [RGB Guessing Game :](http://htmlpreview.github.io/?https://github.com/ropaillet/RodriProjects/blob/master/Web/Web%20Projects/RGB%20GAME/rgbgame.html) A simple RGB value guessing game to sharpen your color prediction skills.
 
 **Technologies :**
 - JS, EJS, JSX.
