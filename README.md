@@ -33,7 +33,7 @@ A snack of my past and current projects !.
 - Udemy : The Web Development Bootcamp by Steele Colt (2017): HTML, CSS, JS , Node.js
 - Coderhouse - Web & Mobile Development (2017): JS, CSS, HTML, React Native.
 
-**Languages : **
+**Languages :**
 - English (Advanced, Certified).
 - Portuguese (Advanced, Certified).
 - Spanish (Native).
