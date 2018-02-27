@@ -17,12 +17,12 @@ A snack of my past and current projects !.
 - RGB Game : A simple RGB value guessing game to sharpen your color prediction skills.
 
 **Technologies :**
-- JS
+- JS, EJS, JSX.
 - Node
 - React Native
 - HTML / CSS, Bootstrap, jQuery.
 - Visual Basic for Apps
-- Data Studio, SQL
+- Data Studio, SQL, MongoDB
 - Digital Marketing : Google AW & Analytics Certified
 
 **Courses :**
