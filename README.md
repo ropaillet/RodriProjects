@@ -7,7 +7,7 @@ Web :
 Campfire : A global campground finder app. [a link](https://protected-bayou-93766.herokuapp.com)
 - MEAN stack, RESTful Routing, EJS, Express, Passport, MongoLab, Heroku.
 
-Fernando Batista Webpage : [a link](http://www.fernandoarielbatista.com)
+[Fernando Batista Webpage :](http://www.fernandoarielbatista.com)
 - HTML, CSS, JS, GoDaddy.
 
 Others :
