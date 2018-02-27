@@ -28,7 +28,7 @@ InitializeEasy();
 function initializeCommon(){
 	gameOn = true;
 	gameAlert.textContent = "" ;
-	titleBack.style.backgroundColor = "rgb(0, 113, 226)";
+	titleBack.style.backgroundColor = "rgb( 0, 113, 226 )";
 	resultColor = randomRGBColor();
 	resultColorToDisplay = resultColor.substring(3);
 	resultColorDisplay.textContent = resultColorToDisplay ;
@@ -66,7 +66,7 @@ function answerChecker(){
 	if (gameOn){
 		if ( boxColor == resultColor) {
 			gameAlert.textContent = " You got it right rookie" ;
-			gameAlert.style.color = "rgb(5, 255, 100)" ;
+			gameAlert.style.color = "rgb( 5, 255, 100 )" ;
 			gameOn = false;
 			score += 15 ;
 			scoreDisplay.textContent = score ;
@@ -74,16 +74,16 @@ function answerChecker(){
 			for (var i = 0; i < eachBoxHard.length; i++) {
 				if (eachBoxHard[i].style.backgroundColor = "black") {
 					eachBoxHard[i].style.backgroundColor = resultColor ;
-					titleBack.style.backgroundColor = resultColor ;	
+					titleBack.style.backgroundColor = resultColor ;
 				}
 			}
 		} else {
 			gameAlert.textContent = " Try Another One" ;
 			gameAlert.style.color = "red" ;
 			this.style.backgroundColor = "black" ;
-		}	
+		}
 	}
-	
+
 }
 
 // randomly creates the result box out of 10 possible
@@ -104,7 +104,5 @@ function randomRGBColor() {
 	var r = randomRGBComponent();
 	var g = randomRGBComponent();
 	var b = randomRGBComponent();
-	return 'rgb(' + r + ', ' + g + ', ' + b + ')';
+	return 'rgb('  + r + ', ' + g + ', ' + b +  ')';
 }
-
-
