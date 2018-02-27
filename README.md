@@ -9,7 +9,7 @@ A snack of my past and current projects !.
 - MEAN stack, RESTful Routing, EJS, Express, Passport, MongoLab, Heroku.
 
 [Fernando Batista Webpage :](http://www.fernandoarielbatista.com)
-- HTML, CSS, JS, GoDaddy.
+- HTML, CSS, Bootstrap JS, GoDaddy.
 
 **Others**
 - PatatapClone : A Patatap clone made with Howler.Js and Paper.js libraries
