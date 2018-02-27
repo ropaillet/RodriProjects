@@ -2,8 +2,6 @@
 
 A snack of my past and current projects !.
 
-**Web :**
-
 **Deployed :**
 
 [Campfire : A global campground finder app.](https://protected-bayou-93766.herokuapp.com)
