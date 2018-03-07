@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
 import { emailChanged, pwdChanged, loginUser } from '../actions';
-import { Card, CardSection, Input, Button1 } from './common';
+import { Card, CardSection, Input, Button1, Spinner1 } from './common';
 
 class LoginForm extends Component {
-  //Call action creators
   onEmailChange(text) {
     this.props.emailChanged(text);
   }
@@ -14,8 +14,42 @@ class LoginForm extends Component {
   }
 
   onButtonPress() {
-    const { email, pwd } = this.props;
-    this.props.loginUser({ email, pwd });
+    const { email, password } = this.props;
+    this.props.loginUser({ email, password });
+  }
+
+  loginError() {
+    if (this.props.error.message) {
+      return (
+        <View>
+            <Text style={styles.errorText}>
+              {this.props.error.message}
+            </Text>
+        </View>
+      );
+    }
+    if (this.props.error === 'Logged In') {
+      return (
+        <View>
+            <Text style={styles.errorText}>
+              {this.props.error}
+            </Text>
+        </View>
+      );
+    }
+  }
+
+  buttonOrSpinner() {
+    if (this.props.loginProcessing) {
+      return <Spinner1 size='large' />;
+    }
+
+
+    return (
+      <Button1 onPress={this.onButtonPress.bind(this)}>
+        Log In
+      </Button1>
+    );
   }
 
   render() {
@@ -37,28 +71,36 @@ class LoginForm extends Component {
             autoCorrect={false}
             secureTextEntry
             onChangeText={this.onPwdChange.bind(this)}
-            value={this.props.pwd}
+            value={this.props.password}
           />
         </CardSection>
-
+        {this.loginError()}
         <CardSection>
-            <Button1 onPress={this.onButtonPress.bind(this)}>
-              Log In
-            </Button1>
+          {this.buttonOrSpinner()}
         </CardSection>
       </Card>
     );
   }
 }
 
+const styles = {
+  errorText: {
+    fontSize: 20,
+    color: 'red',
+    alignSelf: 'center'
+  }
+};
+
 const mapStateToProps = state => {
-  console.log(state);
   return {
     email: state.auth.email,
-    pwd: state.auth.pwd,
-    user: state.auth.user
+    password: state.auth.password,
+    user: state.auth.user,
+    error: state.auth.error,
+    loginProcessing: state.auth.loginProcessing
   };
 };
 
-export default connect(mapStateToProps,
-  { emailChanged, pwdChanged, loginUser })(LoginForm);
+export default connect(mapStateToProps,{
+  emailChanged, pwdChanged, loginUser
+})(LoginForm);

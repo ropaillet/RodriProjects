@@ -1,8 +1,10 @@
-import firebase from 'firebase';
+import firebase from '../config/firebase';
 import {
   EMAIL_CHANGED,
   PWD_CHANGED,
-  LOGIN_SUCCESS
+  LOGIN_SUCCESS,
+  LOGIN_USER_FAILED,
+  LOGIN_PROCESSING
 }
 from './types';
 
@@ -20,21 +22,29 @@ export const pwdChanged = (text) => {
   };
 };
 
-export const loginUser = ({ email, pwd }) => {
+export const loginUser = ({ email, password }) => {
   return (dispatch) => {
-    firebase.auth().signInWithEmailAndPassword(email, pwd)
-      .then(user => {
-        dispatch({ type: LOGIN_SUCCESS, payload: user });
-      })
+    dispatch({ type: LOGIN_PROCESSING });
+    firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(user => loginUserSuccess(dispatch, user))
       .catch(() => {
-        firebase.auth().createUserWithEmailAndPassword(email, pwd)
-          .then(user => {
-            dispatch({ type: LOGIN_SUCCESS, payload: user });
-          });
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then(user => loginUserSuccess(dispatch, user))
+          .catch((error) => loginFailed(dispatch, error));
       });
-  };
+    };
 };
 
 const loginUserSuccess = (dispatch, user) => {
-  
-}
+  dispatch({
+    type: LOGIN_SUCCESS,
+    payload: user
+  });
+};
+
+const loginFailed = (dispatch, error) => {
+  dispatch({
+    type: LOGIN_USER_FAILED,
+    payload: error
+   });
+};
