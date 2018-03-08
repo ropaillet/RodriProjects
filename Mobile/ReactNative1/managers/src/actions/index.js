@@ -4,7 +4,8 @@ import {
   PWD_CHANGED,
   LOGIN_SUCCESS,
   LOGIN_USER_FAILED,
-  LOGIN_PROCESSING
+  LOGIN_PROCESSING,
+  LOGOUT_USER
 }
 from './types';
 
@@ -31,6 +32,16 @@ export const loginUser = ({ email, password }) => {
         firebase.auth().createUserWithEmailAndPassword(email, password)
           .then(user => loginUserSuccess(dispatch, user))
           .catch((error) => loginFailed(dispatch, error));
+      });
+  };
+};
+
+export const logoutUser = () => {
+  return (dispatch) => {
+    dispatch({ type: LOGIN_PROCESSING });
+    firebase.auth().signOut()
+      .then(() => {
+        dispatch({ type: LOGOUT_USER });
       });
     };
 };

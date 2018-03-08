@@ -4,6 +4,7 @@ import {
   LOGIN_PROCESSING,
   LOGIN_SUCCESS,
   LOGIN_USER_FAILED,
+  LOGOUT_USER
 } from '../actions/types';
 
 //initial initialization value of form and state set to nothing
@@ -36,6 +37,11 @@ export default (state = initState, action) => {
         ...state,
         ...initState,
         error: action.payload,
+      };
+    case LOGOUT_USER:
+      return {
+        ...state,
+        ...initState
       };
     default:
       return state;
